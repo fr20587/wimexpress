@@ -1,0 +1,108 @@
+<!-- Page banner Area -->
+<div class="page-banner bg-1">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="page-content">
+                    <h2>NUESTRO EQUIPO ESTÁ SUS ÓRDENES</h2>
+                    <ul>
+                        <li><a routerLink="/">Inicio</a></li>
+                        <li>Contáctenos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page banner Area -->
+
+<!-- Contact Info -->
+<div class="pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info">
+                    <i class='bx bxs-phone'></i>
+                    <h4>Teléfonos</h4>
+                    <p><a href="tel:+52-1-999-518-8337">+52 1 999 518 8337</a></p>
+                    <p><a href="tel:+52-1-999-544-8624">+52 1 999 544 8624</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info">
+                    <i class='bx bxs-map-pin'></i>
+                    <h4>Domicilio</h4>
+                    <p>Calle 16 No 313 interior 5</p>
+                    <p>entre 7 y 9 Residencial Cámara</p>
+                    <p>de Comercio del Norte. Mérida, Yucatán</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                <div class="contact-info">
+                    <i class='bx bxs-envelope'></i>
+                    <h4>Correos electrónicos</h4>
+                    <p><a href="mailto:info@wimexpress.com">info@wimexpress.com</a></p>
+                    <p><a href="mailto:mabel.comelect@wiremidmx.com">mabel.comelect@wiremidmx.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Contact Info -->
+
+<!-- Contact Area -->
+<div class="contact-form-area pb-100">
+    <div class="container">
+        <div class="section-title">
+            <span>Escríbanos</span>
+            <h2>Estamos a la espera de sus comentarios</h2>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm" [formGroup]="contactForm">
+                <div class="row">
+                    <div class="col-md-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="name" class="form-control" id="name" required placeholder="Su nombre y apellidos">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-md-6">
+                        <div class="form-group">
+                            <input type="email" formControlName="email" class="form-control" id="email" required placeholder="Su correo electrónico">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="subject" id="msg_subject" class="form-control" required placeholder="Asunto">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="phone" class="form-control" id="phone_number" required placeholder="Su teléfono">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <textarea formControlName="message" id="message" class="form-control" cols="30" rows="6" required placeholder="Escriba su mensaje..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <button type="submit" class="default-btn-one">Enviar Mensaje</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Contact Area -->
+
+<!-- Newsletter Area -->
+<ath-subscribe></ath-subscribe>
+<!-- End Newsletter Area -->
